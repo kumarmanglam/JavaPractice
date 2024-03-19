@@ -9,6 +9,8 @@ public class AnyMatch {
 
         // Using anyMatch()
         boolean anyGreaterThanThree = numbers.stream().anyMatch(num -> num > 3);
+        boolean res = numbers.stream().noneMatch(num -> num > 3);
+        System.out.println(res);
         System.out.println("Any number greater than three? " + anyGreaterThanThree); // Prints "Any number greater than three? true"
 
         // Using anyMatch() on an empty stream

@@ -16,5 +16,8 @@ public class MyPair <K,V>{
     public static void main(String[] args) {
         MyPair<String, Integer> m1 = new MyPair<>("key", 23);
         m1.display();
+
+        MyPair<Integer, Character> m2 = new MyPair<>(25,'a');
+        m2.display();
     }
 }

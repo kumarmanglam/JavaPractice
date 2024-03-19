@@ -13,7 +13,7 @@ public class SupplierDemo {
         Supplier<Integer> numberSupplier = () -> {
             int min = 1;
             int max = 10;
-            int random = (int) (Math.random() * (max - min)) + min;
+            int random = (int) (Math.random() * (max - min)) + min; // 1 9
             return nums[random];
         };
 

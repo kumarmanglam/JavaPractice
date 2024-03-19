@@ -14,8 +14,8 @@ public class FlatMap {
 
         List<List<Integer>> listOfList = Arrays.asList(list1, list2, list3, list4);
         System.out.println(listOfList);
-        List<Integer> result = listOfList.stream().flatMap(x -> x.stream()).collect(Collectors.toList());
-//        List<Integer> result = listOfList.stream().flatMap(Collection::stream).collect(Collectors.toList());
+//        List<Integer> result = listOfList.stream().flatMap(x -> x.stream()).collect(Collectors.toList());
+        List<Integer> result = listOfList.stream().flatMap(Collection::stream).collect(Collectors.toList());
 
         System.out.println(result);
     }

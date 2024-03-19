@@ -17,10 +17,11 @@ public class PredicateAndOperation {
 //        System.out.println(p.or(p2).test("sdfasdf"));
 //        System.out.println("hei");
 
-        System.out.println(p.and(p2).test("sdfasdf"));  // and
-        System.out.println(p.or(p2).test("sdfasdf"));   // or
-        Predicate<String> pNegate = p.negate(); // this will return predicate // negate
+//        System.out.println(p.and(p2).test("sdfasdf"));  // and
+//        System.out.println(p.or(p2).test("dfasdf"));   // or
+//        Predicate<String> pNegate = p.negate(); // this will return predicate // negate
         Predicate<String> pEqual = Predicate.isEqual("kumar");  //equal
-        System.out.println(pNegate.test("ssdfasdf"));
+//        System.out.println(pNegate.test("ssdfasdf"));
+//        System.out.println(pNegate.test("sdfa"));
     }
 }

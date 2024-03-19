@@ -8,4 +8,14 @@ public class MyStack<T>{
     public MyStack(){
         list = new ArrayList<>();
     }
+
+    public void add(int val){
+
+    }
+}
+
+class demo4{
+    public static void main(String[] args) {
+
+    }
 }

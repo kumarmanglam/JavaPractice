@@ -5,7 +5,7 @@ package org.javaBasic.thread;
 public class BThread implements Runnable{
     @Override
     public void run() {
-        System.out.println("BThread ran"+ Thread.currentThread().getName());
+        System.out.println("BThread ran "+ Thread.currentThread().getName());
     }
 }
 

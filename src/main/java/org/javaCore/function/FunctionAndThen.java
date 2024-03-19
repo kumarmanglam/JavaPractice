@@ -12,7 +12,7 @@ public class FunctionAndThen {
         Function<Integer, Integer> func2 = i -> i * 2; // length *2
 
         Integer result = func.andThen(func2).apply("Java8functions");
-//        System.out.println(result);
+        System.out.println(result);
 
         List<Customer> list = new ArrayList<>();
         list.add(new Customer("thomas", 10, "mobile"));
@@ -28,8 +28,8 @@ public class FunctionAndThen {
 
         for (Customer c : list) {
             if (po.and(pl).test(c)) {
-                System.out.println(c.getName()+ " --> " + fl.apply(c));
-//                System.out.println(c.getName() + " --> " + fc.andThen(fl).apply(c));
+//                System.out.println(c.getName()+ " --> " + fl.apply(c));
+                System.out.println(c.getName() + " --> " + fc.andThen(fl).apply(c));
             }
         }
     }

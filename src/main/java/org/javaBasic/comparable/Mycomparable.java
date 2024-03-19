@@ -24,7 +24,7 @@ class MyClass implements Comparable<MyClass>{
 
     @Override
     public int compareTo(MyClass ob) {
-        if(ob.name.compareTo(this.name)!=0){
+        if(ob.name.compareTo(this.name)!=0){ // if they are not equal
             return this.name.compareTo(ob.name);
         }
         return this.rollno- ob.rollno;
@@ -33,7 +33,7 @@ class MyClass implements Comparable<MyClass>{
 public class Mycomparable {
     // Comparable is Interface it has compareTo method.
     public static void main(String[] args) {
-        MyClass c1 = new MyClass("kumar", 23);
+        MyClass c1 = new MyClass("Kumar", 23);
         MyClass c2 = new MyClass("Nikhil", 32);
         MyClass c3 = new MyClass("Abhi", 55);
         MyClass c4 = new MyClass("Nikhil", 53);

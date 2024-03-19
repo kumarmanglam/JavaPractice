@@ -12,7 +12,7 @@ public class EThreadExample extends Thread{
             throw new RuntimeException(e);
         }
 
-        //System.out.println(Thread.currentThread().getName()+ " after 3 seconds");
+        System.out.println(Thread.currentThread().getName()+ " after 3 seconds");
     }
 
 }

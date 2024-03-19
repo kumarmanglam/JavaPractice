@@ -7,11 +7,13 @@ import java.util.Optional;
 
 public class Min {
     public static void main(String[] args) {
-        List<Integer> numbers = Arrays.asList(1, 5, 3, 7, 2);
+        List<Integer> numbers = Arrays.asList();
 
         // Using min() with natural ordering
         Optional<Integer> min = numbers.stream().min(Comparator.naturalOrder());
         min.ifPresent(System.out::println); // Prints the minimum element
+
+        System.out.println(numbers.stream().min(Comparator.naturalOrder()));
 
         // Using min() with a custom comparator
         Optional<Integer> minCustom = numbers.stream().min(Comparator.reverseOrder());

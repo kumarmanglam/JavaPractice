@@ -17,7 +17,7 @@ class demo7{
         IThreadJoin i1 = new IThreadJoin();
         IThreadJoin i2 = new IThreadJoin();
         i1.start();
-//        i1.join();
+        i1.join();
         i2.start();
     }
     //The join() method in Java is provided by the java.lang.Thread class

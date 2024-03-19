@@ -10,6 +10,8 @@ public class ConsumerDemo {
     public static void main(String[] args) {
         Consumer<String> print = s -> System.out.println(s);
 
+        print.accept("avvabb");
+
         List<Customer> list = new ArrayList<>();
         list.add(new Customer("thomas", 10, "mobile"));
         list.add(new Customer("mike", 20, "mobile"));

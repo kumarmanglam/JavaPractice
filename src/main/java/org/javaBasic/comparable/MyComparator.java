@@ -36,8 +36,6 @@ class  sortByRollNo implements Comparator<MyStudent>{
     }
 }
 public class MyComparator {
-
-
     public static void main(String[] args) {
         MyStudent s1 = new MyStudent("Kumar", 23);
         MyStudent s2 = new MyStudent("Akhil", 44);
@@ -62,13 +60,13 @@ public class MyComparator {
         System.out.println(list2);
 
 
-        MyStudent[] list = {s1, s2, s3, s4};
-
-        Arrays.sort(list, new sortByName());
-
-        for(MyStudent m: list){
-            System.out.println(m);
-        }
+//        MyStudent[] list = {s1, s2, s3, s4};
+//
+//        Arrays.sort(list, new sortByName());
+//
+//        for(MyStudent m: list){
+//            System.out.println(m);
+//        }
     }
 
 }

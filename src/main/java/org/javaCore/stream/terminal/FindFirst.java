@@ -15,6 +15,7 @@ public class FindFirst {
         // Using findFirst() on an empty stream
         Stream<String> emptyStream = Stream.empty();
         Optional<String> firstEmptyElement = emptyStream.findFirst();
+        System.out.println(firstEmptyElement);
         firstEmptyElement.ifPresentOrElse(System.out::println, () -> System.out.println("Stream is empty")); // Prints "Stream is empty"
     }
 }

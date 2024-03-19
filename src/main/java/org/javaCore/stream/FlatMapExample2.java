@@ -12,11 +12,11 @@ public class FlatMapExample2 {
 //        List<String> result = Arrays.stream(nestedArray).flatMap(x -> Arrays.stream(x)).collect(Collectors.toList());
 //        System.out.println(result);
 
-//        Set<Integer> s = new HashSet<>();
-//        s.add(32);
-//        s.add(2);
-//        s.add(92);
-//        s.add(42);
-//        s.stream().forEach(System.out::println);
+        Set<Integer> s = new HashSet<>();
+        s.add(32);
+        s.add(2);
+        s.add(92);
+        s.add(42);
+        s.stream().forEach(System.out::println);
     }
 }

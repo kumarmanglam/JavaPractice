@@ -1,5 +1,5 @@
 package org.javaBasic.thread;
-class Table {
+class Table { //  resource
     synchronized void printTable(int num){
         for (int i = 1; i <= 10; i++) {
             System.out.println(i*num);
@@ -7,7 +7,7 @@ class Table {
     }
 }
 
-class Thread1 extends Thread{
+class Thread1 extends Thread{ //first
     Table t;
     Thread1(Table obj){
         this.t = obj;
@@ -18,7 +18,7 @@ class Thread1 extends Thread{
     }
 }
 
-class Thread2 extends Thread{
+class Thread2 extends Thread{ // second
     Table t;
     Thread2(Table obj){
         this.t = obj;
@@ -33,15 +33,15 @@ class Thread2 extends Thread{
 
 public class LSynchronizedMethod {
     public static void main(String[] args) {
-        Table table = new Table();
-        Thread1 t1 = new Thread1(table);
-        Thread1 t2= new Thread1(table);
+        Table table = new Table(); // shared resource (shared by th1 and th2)
+//        Thread1 t1 = new Thread1(table);
+//        Thread2 t2= new Thread2(table);
 //        t1.start();
 //        t2.start();
 
 
         Thread1 t3 = new Thread1(table);
-        Thread2 t4= new Thread2(table);
+        Thread1 t4= new Thread1(table);
         t3.start();
         t4.start();
     }

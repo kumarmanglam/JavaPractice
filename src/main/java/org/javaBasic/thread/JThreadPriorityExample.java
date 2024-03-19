@@ -16,7 +16,7 @@ class demo8{
         ex1.setPriority(10);
         ex2.setPriority(1);
         ex3.setPriority(3);
-
+// 1 3 2
         ex1.start();
         ex2.start();
         ex3.start();

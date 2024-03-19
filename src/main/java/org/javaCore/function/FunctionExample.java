@@ -13,5 +13,9 @@ public class FunctionExample {
         Customer a = new Customer("rohan", 23, "samsung");
 
         System.out.println(x.apply(a));
+
+        Function<Integer, Integer> fn = z -> z*2;
+        System.out.println(fn.apply(2));
+
     }
 }

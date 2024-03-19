@@ -10,9 +10,10 @@ interface Interf1 {
     public int multiply(int a);
 }
 
-@FunctionalInterface
+
 interface Interf2 extends Interf1{
     public int multiply(int a);
+//    public int division(int a);
 }
 
 public class InheritanceFunctional2 {
